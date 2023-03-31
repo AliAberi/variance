@@ -2,25 +2,30 @@ package ir.hamsaz.models;
 
 public class Transaction {
 
-    private int price;
-    private int traking_number;
+    private String price;
+    private String trackingNumber;
 
-    public Transaction(){}
+    public Transaction(String price,String traking_number){
+        this.price = price;
+        this.trackingNumber = traking_number;
+    }
 
 
-    public int getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+
+
+    public void setPrice(String price) {
         this.price = price;
     }
 
-    public int getTraking_number() {
-        return traking_number;
+    public String getTrackingNumber() {
+        return trackingNumber;
     }
 
-    public void setTraking_number(int traking_number) {
-        this.traking_number = traking_number;
+    public void setTrackingNumber(String trackingNumber) {
+        this.trackingNumber = trackingNumber;
     }
 }
