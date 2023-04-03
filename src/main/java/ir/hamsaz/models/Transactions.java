@@ -42,4 +42,12 @@ public class Transactions {
     public boolean isEmpty(){
         return trs.isEmpty();
     }
+
+    public void RemoveTransaction(int i){
+        trs.remove(i);
+    }
+
+    public void RemoceAllTransactions(){
+        trs.removeAll(trs);
+    }
 }
