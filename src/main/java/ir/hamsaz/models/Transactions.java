@@ -38,4 +38,8 @@ public class Transactions {
     public int get_trs_size(){
         return trs.size();
     }
+
+    public boolean isEmpty(){
+        return trs.isEmpty();
+    }
 }
