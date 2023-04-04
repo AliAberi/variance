@@ -50,4 +50,11 @@ public class Transactions {
     public void RemoceAllTransactions(){
         trs.removeAll(trs);
     }
+
+    public void addTransactionsToTrs(Transactions t){
+        for (int i = 0; i < t.get_trs_size(); i++) {
+            trs.add(t.getTrs().get(i));
+        }
+    }
+
 }
